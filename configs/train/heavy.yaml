@@ -1,0 +1,17 @@
+inherit: ../model/stack.yaml
+device: cuda
+train:
+  epochs: 4000
+  batch_size: 4096
+  grad_accum: 4
+  world_size: 8
+  lr: 0.000003
+  warmup_steps: 8000
+  weight_decay: 0.05
+  grad_clip: 1.0
+  precision: fp32
+  amp: false
+  trajectories: 65536
+  seed: 20240117
+  log_every: 50
+  ckpt_every: 500

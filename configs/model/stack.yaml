@@ -1,0 +1,25 @@
+inherit: ../data/chip.yaml
+lift:
+  n_observable: 12
+  hidden: [64, 64]
+  activation: tanh
+  ridge: 0.001
+  recon_weight: 1.0
+  linear_weight: 1.0
+  physics_weight: 0.5
+horizon:
+  estimation: 24
+  control: 16
+  arrival_weight: 4.0
+  process_weight: 1.0
+  physics_weight: 0.25
+  noise_forget: 0.9
+safety:
+  shear_ceiling: 1.0
+  oxygen_floor: 0.05
+  oxygen_ceiling: 1.0
+  drug_ceiling: 1.0
+  drug_ramp_cap: 0.15
+  viability_guard: 0.2
+  track_weight: 1.0
+  effort_weight: 0.05

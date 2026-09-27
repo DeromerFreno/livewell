@@ -1,0 +1,3 @@
+inherit: main.yaml
+name: ablation_no_safety_mpc
+ablate: [safety_mpc]

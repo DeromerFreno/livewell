@@ -1,0 +1,16 @@
+name: livewell
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.8.16
+  - pip=23.0
+  - pytorch=1.13.1
+  - pytorch-cuda=11.7
+  - numpy=1.23.5
+  - scipy=1.9.3
+  - pip:
+      - PyYAML==6.0
+      - pydantic==2.0.3
+      - cleo==2.0.1

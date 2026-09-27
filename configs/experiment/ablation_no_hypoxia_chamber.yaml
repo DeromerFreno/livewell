@@ -1,0 +1,5 @@
+inherit: main.yaml
+name: ablation_no_hypoxia_chamber
+plant:
+  secretion_gain: 0.55
+  hypoxia_floor: 0.05

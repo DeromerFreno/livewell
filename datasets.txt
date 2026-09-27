@@ -1,0 +1,43 @@
+RESOURCE INVENTORY
+==================
+
+This study uses no public machine-learning dataset. The matched clinical records
+that support the clinical-correlation analysis are de-identified and are held
+under the access terms of the governing ethics approval reported in the
+manuscript; they are not redistributed with this repository. The
+clinical-correlation step reads your access-controlled copy of them; no other
+step needs them.
+
+This repository ships no cohort data. The clinical-correlation analysis reads a
+de-identified, access-controlled records file that is supplied at run time
+(`python -m livewell.panel correlate --records PATH`, or `cohort.records` in the
+experiment configuration); nothing is downloaded and no cohort is produced in
+process. The loader layout is documented in `livewell/hatchery/cohort.py`, and
+the values computed from the records are the study estimates reported in the
+manuscript.
+
+The only externally hosted resources are the reference pages for the three
+commercial hepatocellular-carcinoma cell lines named in the device
+characterization. Each link below returned HTTP 200 on verification.
+
+HepG2
+  Cellosaurus  https://www.cellosaurus.org/CVCL_0027
+  ATCC HB-8065 https://www.atcc.org/products/hb-8065
+
+Huh7
+  Cellosaurus  https://www.cellosaurus.org/CVCL_0336
+  JCRB0403     https://cellbank.nibiohn.go.jp/~cellbank/en/search_res_det.cgi?RNO=JCRB0403
+
+HCCLM3
+  Cellosaurus  https://www.cellosaurus.org/CVCL_6832
+
+ACCESS NOTES
+============
+
+Cell lines ship under the supplying repository material-transfer terms.
+
+The patient-derived-organoid specimens and the paired clinical course are
+de-identified and were never disclosed in identifiable form. They are held under
+the ethics approval reported in the manuscript and are not redistributable; none
+of the software checks distributed here require them, and no cohort records are
+shipped with or produced by this repository.

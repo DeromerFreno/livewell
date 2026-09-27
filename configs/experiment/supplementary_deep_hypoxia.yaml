@@ -1,0 +1,5 @@
+inherit: main.yaml
+name: supplementary_deep_hypoxia
+plant:
+  hypoxia_floor: 0.005
+  secretion_gain: 1.5

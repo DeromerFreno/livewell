@@ -1,0 +1,4 @@
+inherit: main.yaml
+name: ablation_no_tri_culture
+plant:
+  barrier_decay: 0.5

@@ -1,0 +1,27 @@
+# for unit-test smoke only; do not use for reporting
+inherit: ../train/heavy.yaml
+name: smoke
+device: cpu
+lift:
+  n_observable: 8
+  hidden: [16]
+  activation: tanh
+  ridge: 0.001
+  recon_weight: 1.0
+  linear_weight: 1.0
+  physics_weight: 0.5
+train:
+  epochs: 8
+  batch_size: 256
+  grad_accum: 1
+  world_size: 1
+  lr: 0.01
+  warmup_steps: 0
+  weight_decay: 0.0
+  grad_clip: 1.0
+  precision: fp32
+  amp: false
+  trajectories: 256
+  seed: 7
+  log_every: 1
+  ckpt_every: 1000

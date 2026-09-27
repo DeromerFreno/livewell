@@ -1,0 +1,4 @@
+inherit: main.yaml
+name: ablation_no_stiffness_gradient
+plant:
+  stiffening_gain: 0.5

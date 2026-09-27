@@ -1,0 +1,3 @@
+inherit: main.yaml
+name: ablation_no_multimodal_fusion
+ablate: [multimodal_fusion]

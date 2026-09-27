@@ -1,0 +1,28 @@
+plant:
+  n_state: 4
+  n_input: 3
+  n_output: 5
+  dt_hours: 0.5
+  horizon_hours: 72.0
+  early_window_hours: 24.0
+  hypoxia_floor: 0.008
+  secretion_gain: 1.35
+  stiffening_gain: 0.42
+  barrier_decay: 0.27
+  drug_efficacy: 0.6
+  process_noise: 0.01
+probe:
+  lod: [0.37, 4.1, 20.7]
+  teer_baseline: 870.0
+  teer_resolution: 12.5
+  oxygen_resolution: 0.07
+  drift_per_day: 0.086
+  measurement_noise: 0.02
+  zone_count: 8
+cohort:
+  # Path to the de-identified, access-controlled cohort records used by
+  # `panel correlate`. The records are NOT distributed with this repository
+  # (see README.md and datasets.txt); set this to your access-controlled copy,
+  # or pass --records at run time.
+  records: null
+  bootstrap: 2000
